@@ -1,0 +1,25 @@
+.Tramway__list{
+  width: 100%;
+  height: 100%;
+}
+
+.Tramway__listtable {
+  width: 100%;
+  height: 100%;
+}
+
+.cw {
+  color: white;
+}
+
+.Disponible {
+    background-color: rgba(105, 190, 40, 1); 
+}
+
+.Inactiva {
+  background-color: rgb(190, 45, 40); 
+}
+
+.Mantenimiento {
+  background-color: rgb(40, 130, 190); 
+}

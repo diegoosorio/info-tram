@@ -1,0 +1,24 @@
+.UpdateTramways{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.UpdateTramways__body {
+  width: 60%;
+}
+
+.ToastSucces {
+  position: absolute;
+  padding: 10px;
+  background-color: lightgreen;
+}
+
+.ToastFail {
+  position: absolute;
+  padding: 10px;
+  background-color: lightcoral;
+
+}

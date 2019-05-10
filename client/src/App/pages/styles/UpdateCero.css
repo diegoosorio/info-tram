@@ -1,0 +1,21 @@
+.UpdateCero{
+  width: 100vw;
+  height: 100vh;
+  /* border: 1px solid black; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ToastSucces {
+  position: absolute;
+  padding: 10px;
+  background-color: lightgreen;
+}
+
+.ToastFail {
+  position: absolute;
+  padding: 10px;
+  background-color: lightcoral;
+
+}

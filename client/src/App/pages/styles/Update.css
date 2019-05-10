@@ -1,0 +1,64 @@
+.Update{
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;  
+}
+
+.grid-container {
+  width: 70%;
+  height: 100%; 
+  /* border: 1px solid black; */
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+  grid-template-rows: repeat(6, 1fr); 
+  grid-column-gap: 2px;
+  grid-row-gap: 2px; 
+  /* width: 100vw;
+  height: 100vh;*/
+}
+
+Link {
+  display: flex;
+  align-items: center;
+}
+
+.Update__button {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  text-decoration: none;
+  background-color: rgba(105, 190, 40, 1);
+  color: black;
+  border-radius: 3px;
+  font-size: 1.2rem;
+}
+
+.item:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.item-1{
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+
+.item-2{
+  grid-column-start: 5;
+  grid-column-end: 8;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.item-3{
+  grid-column-start: 9;
+  grid-column-end: 12;
+  grid-row-start: 2;
+  grid-row-end: 3
+}
+
