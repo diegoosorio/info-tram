@@ -22,10 +22,10 @@ const upload = multer({
     const filetypes = /csv/;
     const mimetype = filetypes.test(file.mimetype);
     const extname = filetypes.test(path.extname(file.originalname));
-    if (mimetype && extname) {
+    // if (mimetype && extname) {
+    if(extname){
       return cb(null, true);
     } else {
-      // cb("Error: Archivo debe ser csv");
       return cb(null, false);
     }
   }
@@ -34,7 +34,7 @@ const upload = multer({
 router.post("/", upload.single("tasksFile"), async function(req, res) {
   if(req.file !== undefined){
     const path = req.file.path;
-    CSVToJSON()
+    CSVToJSON({delimiter: "auto"})
       .fromFile(path)
       .then(source => {
         return source;
@@ -54,6 +54,7 @@ router.post("/", upload.single("tasksFile"), async function(req, res) {
         }
       });
   } else {
+    console.log(req);
     res.status(200).json({
       data: false,
       message: "Extensión invalida"

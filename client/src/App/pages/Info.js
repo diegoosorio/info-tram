@@ -32,7 +32,7 @@ class Info extends React.Component {
       .then(response => {
         // handle success
         const tasks = response.data.data;
-        // console.log(tasks);
+        console.log(tasks);
         this.setState({
           tasks
         });
@@ -71,10 +71,6 @@ class Info extends React.Component {
           </div>
           <div className="Right-aside">
             <div className="Zero">
-              {/* {
-                
-                console.log("accidentes", this.state.listaAccidentes)
-              } */}
               <Cero />
             </div>
             <div className="Explotacion">

@@ -18,14 +18,13 @@ class UpdateTramways extends React.Component{
       value: e.target.value,
       name: e.target.name
     });
-    console.log(this.state.name);
+    console.log(e.target.files[0]);
   }
 
   handleClick = e =>{
     e.preventDefault();
     const { name, selectedFile } = this.state;
     const formData = new FormData();
-
     formData.append(name, selectedFile);
     const config = {
       headers: {
@@ -61,17 +60,6 @@ class UpdateTramways extends React.Component{
                 <button className="btn btn-primary mt-2" type="submit">Actualizar</button>
               </div>
             </form>
-            {/* <form 
-              action="/update/tasks" 
-              method="POST"
-              encType="multipart/form-data"
-              className="pt-5"
-            >
-              <input type="file" name="image"/>
-              <button type="submit">
-                Up
-              </button>
-            </form> */}
           </div>
         </div>
       </div>

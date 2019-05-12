@@ -22,9 +22,11 @@ const upload = multer({
     const filetypes = /csv/;
     const mimetype = filetypes.test(file.mimetype);
     const extname = filetypes.test(path.extname(file.originalname));
-    if (mimetype && extname) {
+    // if (mimetype && extname) {
+    if(extname){
       return cb(null, true);
     } else {
+      console.log(file)
       return cb(null, false);
     }
   }
